@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Download YouTube Audio</title>
+  </head>
+  <body>
+    <form>
+      <label for="url">YouTube URL:</label>
+      <input type="text" id="url" name="url" placeholder="Enter YouTube URL">
+      <button type="button" onclick="downloadAudio()">Download Audio</button>
+    </form>
+    <script>
+      function downloadAudio() {
+        const url = document.getElementById('url').value;
+        window.location.href = `/download?url=${url}`;
+      }
+    </script>
+  </body>
+</html>
